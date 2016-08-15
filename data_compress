@@ -1,0 +1,6 @@
+#!/bin/sh
+today_date=`date +%Y%m%d`
+echo $today_date
+#mkdir -p ./$today_date
+tar -zcvf $today_date.tgz $today_date
+rm -r ./$today_date
